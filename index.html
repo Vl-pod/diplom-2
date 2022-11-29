@@ -11,23 +11,45 @@
 		<div class="header__container">
 			<div class="header__inner">
 				<nav class="menu">
-					<button class="menu__btn">
-						<div class="burger__lines"></div>
-					</button>
-				</nav>
 				<div class="logo">
 					<a href="#" class="logo__link">
 						<img src="svg/noemi-logo.svg" alt="logo noemi" class="logo__img">
 					</a>
 				</div>
-				<h1 class="welcome-title"> блог о творчестве, спорте и образе жизни
-				</h1>
+					<button class="menu__btn">
+						<span class="menu__btn-label"></span>
+					</button>
+					<ul class="menu__list">
+			        	<li class="menu__list__item">
+			            	<a href="#">главная</a>
+			          	</li>
+			          	<li class="menu__list__item">
+			            	<a href="#">посты</a>
+			          	</li>
+			          	<li class="menu__list__item">
+			            	<a href="#">статьи</a>
+			          	</li>
+			          	<li class="menu__list__item">
+			            	<a href="#">теги</a>
+			          	</li>
+			          	<li class="menu__list__item">
+			            	<a href="#">темы</a>
+			          	</li>
+			          	<li class="menu__list__item">
+			            	<a href="#">контакты</a>
+			          	</li>
+        			</ul>
+				</nav>
 			</div>
+			<h1 class="welcome-title"> блог о творчестве, спорте и образе жизни
+				</h1>
 		</div>
 	</header>
-	<section class="trends">
+	<div class="trend__title">
 		<h2 class="trends__title">сейчас в тренде</h2>
-		
+	</div>
+	<section class="trends">
+		<!-- <h2 class="trends__title">сейчас в тренде</h2> -->
 		<div class="trend__card trend1">
 			<div class="trend-card__content">
 				<ul class="trend__tags">
@@ -38,7 +60,7 @@
 						<a href="#" class="trend__tag__link">INTERIOR</a>
 					</li>
 				</ul>
-				<h2 class="trend__card__title">сейчас в тренде: сад на подоконнике</h2>
+				<h2 class="trend__card__title"><a>сейчас в тренде: сад на подоконнике</a></h2>
 			</div>
 		</div>
 		<div class="trend__card trend2">
@@ -48,7 +70,7 @@
 						<a href="#" class="trend__tag__link">food</a>
 					</li>
 				</ul>
-				<h2 class="trend__card__title">сыры на красивых картинках из интернета: какие они на вкус?</h2>
+				<h2 class="trend__card__title"><a>сыры на красивых картинках из интернета: какие они на вкус?</a></h2>
 			</div>
 		</div>
 		<div class="trend__card trend3">
@@ -61,7 +83,7 @@
 						<a href="#" class="trend__tag__link">travel</a>
 					</li>
 				</ul>
-				<h2 class="trend__card__title">собираемся в первый поход в горы</h2>
+				<h2 class="trend__card__title"><a>собираемся в первый поход в горы</a></h2>
 			</div>
 		</div>
 		<div class="trend__card trend4">
@@ -74,10 +96,11 @@
 						<a href="#" class="trend__tag__link">health</a>
 					</li>
 				</ul>
-				<h2 class="trend__card__title">сейчас в тренде: сколько витамина в лимонах?</h2>
+				<h2 class="trend__card__title"><a>сейчас в тренде: сколько витамина в лимонах?</a></h2>
 			</div>
 		</div>
 	</section>
+<div class="content-wrap">
 	<main class="main__container main-posts">
 		<article class="main-posts-item">
       		<img src="images/last-post1.jpg" alt="Фото человек на пляже" class="posts__item_img">
@@ -243,7 +266,7 @@
     		</section>
 		    <form class="aside__serch-form">
 		      	<label for="" class="search">
-		        	<input type="search" placeholder="Найти..." class="input__form-field">
+		        	<input type="search" placeholder="Найти..." class="input__form-field new-post__field">
 		        	<span class="visually-hidden" aria-hidden="true">Найти...</span>
 		      	</label>
 		      	<button type="submit" class="search__form_button">
@@ -301,19 +324,23 @@
 			      	</ul>
 		    </div>
   		</aside>
+</div> 
   		<section class="products__container">
   			<h3 class="aside__title">наши изделия</h3>
+  		<div class="shop">
   			<div class="product__card">
   				<img src="images/shop-item-mobile1.jpg" alt="Фото" class="product__card__img">
   				<div class="product__card__content">
   					<h3 class="product__title">Подушки на диван</h3>
   					<p class="product__text">Набор из двух подушек с модными принтами. Видео о создании <span><a class="product__link">здесь</a></span>.
   					</p>
-	  				<div class="product__price">
-	  					<p class="old-price">1000 ₽</p>
-	  					<p class="new-price">800 ₽</p>
+  					<div class="product__footer">
+	  					<div class="product__price">
+	  						<p class="old-price">1000 ₽</p>
+	  						<p class="new-price">800 ₽</p>
+	  					</div>
+	  						<button onclick="#" type="button" class="go__shop__btn">в магазин</button>
 	  				</div>
-	  				<button onclick="#" type="button" class="go__shop__btn">в магазин</button>
   				</div>
   			</div>
   			<div class="product__card">
@@ -322,10 +349,12 @@
   					<h3 class="product__title">Кукла «Зайчик»</h3>
   					<p class="product__text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <span><a class="product__link">весенняя серия постов</a></span> в блоге и несколько подкастов. 
   					</p>
-	  				<div class="product__price">
-	  					<p class="new-price">3500 ₽</p>
+  					<div class="product__footer">
+	  					<div class="product__price">
+	  						<p class="new-price">3500 ₽</p>
+	  					</div>
+	  						<button onclick="#" type="button" class="go__shop__btn">в магазин</button>
 	  				</div>
-	  				<button onclick="#" type="button" class="go__shop__btn">в магазин</button>
   				</div>
   			</div>
   			<div class="product__card">
@@ -334,61 +363,59 @@
   					<h3 class="product__title">Шестиугольная рамка</h3>
   					<p class="product__text">Необычная рамка для украшения дома из видео <span><a class="product__link">«Как сделать рамку из подручных средств за 30 минут»</a></span>.
   					</p>
-	  				<div class="product__price">
-	  					<p class="old-price">500 ₽</p>
-	  					<p class="new-price">400 ₽</p>
+  					<div class="product__footer">
+	  					<div class="product__price">
+	  						<p class="old-price">500 ₽</p>
+	  						<p class="new-price">400 ₽</p>
+	  					</div>
+	  						<button onclick="#" type="button" class="go__shop__btn">в магазин</button>
 	  				</div>
-	  				<button onclick="#" type="button" class="go__shop__btn">в магазин</button>
   				</div>
   			</div>
+  		</div>
   		</section>
   	<div class="popup">
-  		<div class="popup__container">
-  			<div class="popup__content">
-  				<h2 class="popup__title">
-  					ваш фидбек
-  				</h2>
-  				<form class="form">
-  					<div class="form__group">
-  						<label class="field__group">
-  							<span class="label__title">Как часто вы заходите на сайт?
-  							</span>
-  							<select class="select">
-  								<option value="" selected>Почти каждый день</option>
-  								<option value="">Раз в несколько дней</option>
-  								<option value="">Раз в несколько недель</option>
-  								<option value="">Несколько раз в год</option>
-  							</select>
-  						</label>
-  					</div>
-  					<div class="form__group">
-  						<label class="field__group">
-  							<span class="label__title">
-  								Вы подписаны на e-mail рассылку?
-  							</span>
-  							<input type="radio" class="radio" checked>
-  							<span class="radio__text">Да</span>
-  							<input type="radio" class="radio">
-                            <span class="radio__text">Нет</span>
-  						</label>
-  					</div>
-  					<div class="form__group">
-                    	<label class="field__group">
-                        	<span class="label__title">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
-                            <textarea class="field textarea" placeholder="Может, больше рецептов?"required></textarea>
-                        </label>
-                    </div>
-                    <div class="form__group">
-                    	<button class="submit">Отправить</button>
-                        	<span class="visually-hidden" aria-hidden="true">Кнопка отправить</span>
-                    </div>
-                    <div class="close__popup">
-                 		<span class="visually-hidden" aria-hidden="true">Закрыть popup</span>
-               		</div>
-  				</form>
-  			</div>
-  		</div>
-  	</div>
+    	<div class="popup__container">
+    		<div class="popup__content">
+    			<h2 class="popup__title">Ваш фидбэк</h2>
+    		<div class="close__popup">
+    			<span class="visually-hidden" aria-hidden="true">Закрыть popup</span>
+    		</div>
+    		<div class="form__group">
+    			<label class="field__group">
+    				<span class="field__label">Как часто вы заходите на сайт?</span>
+    				<select class="select">
+    					<option value="Almost every day" selected="">Почти каждый день</option>
+    					<option value="Once every few days">Раз в несколько дней</option>
+    					<option value="Once every few weeks">Раз в несколько недель</option>
+    					<option value="Several times a year">Несколько раз в год</option>
+    				</select>
+    				</label>
+    			<div class="form__group">
+    				<span class="field__label">Вы подписаны на e-mail рассылку?</span>
+    				<label class="radio__group">
+    					<input type="radio" class="radio" name="radio__group" checked="">
+    					<span class="radio__group-text">Да</span>
+    				</label>
+    				<label class="radio__group"> 
+    					<input type="radio" class="radio" name="radio__group">
+    					<span class="radio__group-text">Нет</span>
+    				</label>
+    			</div>
+    			<div class="form__group">
+    				<label class="field__group">
+    					<span class="field__label">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
+    					<textarea class="field textarea" placeholder="Может, больше рецептов?" required=""></textarea>
+    				</label>
+    			</div>
+    			<div class="form__group">
+    				<button class="submit-btn">Отправить</button>
+    				<span class="visually-hidden" aria-hidden="true">Кнопка отправить</span>
+    			</div>
+    		</div>
+    		</div>
+    	</div>
+    </div>
   	<footer class="footer__container">
   		<address class="footer-wrap">
 		    <ul class="footer-social">
@@ -407,3 +434,5 @@
 	</footer>
 </body>
 </html>
+
+
